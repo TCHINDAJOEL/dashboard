@@ -1,0 +1,17 @@
+Voici un programme Python qui utilise la bibliothèque Streamlit pour créer une application de suivi des revenus et des dépenses.
+
+1. **Importations de modules**: Le programme commence par importer les modules nécessaires, y compris `calendar` pour les calendriers, `datetime` pour travailler avec les dates et heures, `streamlit` pour la création de l'interface utilisateur, et `plotly.graph_objs` pour la création de graphiques interactifs.
+
+2. **Paramètres**: Ensuite, il y a la section des paramètres où vous pouvez définir les catégories de revenus (`incomes`) et de dépenses (`expenses`), la devise utilisée (`currency`), le titre de la page (`page_title`), et l'icône de la page (`page_icon`).
+
+3. **Configuration de la page**: Streamlit est configuré pour afficher le titre de la page et l'icône à l'aide de `st.set_page_config`.
+
+4. **Menu de navigation**: Un menu de navigation est affiché avec deux options : "Saisie de données" et "Visualisation des données".
+
+5. **Saisie de données**: Si l'utilisateur sélectionne "Saisie de données", un formulaire est affiché pour saisir les revenus et les dépenses pour un mois et une année sélectionnés. Les données sont ensuite enregistrées et affichées à l'utilisateur.
+
+6. **Visualisation des données**: Si l'utilisateur sélectionne "Visualisation des données", un formulaire est affiché pour sélectionner un mois et une année pour visualiser les données. Les données (revenus et dépenses) pour ce mois sont ensuite affichées sous forme de graphiques interactifs.
+
+Dans la section de la visualisation des données, un diagramme Sankey est créé pour montrer les flux entre les différentes catégories de revenus et de dépenses. Les catégories sont regroupées sous forme de nœuds, et les flux entre elles sont représentés par des liens.
+
+Voilà! C'est une application simple de suivi des revenus et des dépenses qui permet à l'utilisateur de saisir et de visualiser ses données financières de manière interactive.
